@@ -1,0 +1,305 @@
+:root {
+  --background: #d44365;
+  --tombol: #FF7A16;
+  --putih: #FFFFFF;
+}
+
+*{
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #BC002D;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(180deg, #1A1A1A 0%, rgba(35, 39, 54, 0) 100%);
+
+  transition: box-shadow 0.5s ease;
+}
+
+.menu-navbar{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navbar a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 3px #000;
+  margin: 60px;
+  font-weight: 600;
+  transition: filter 0.3s ease;
+}
+
+.menu-navbar a:hover{
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.menu-navbar img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.box-reservasi{
+  margin-left: 60px;
+  text-shadow: 0 0 3px #000;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.box-reservasi:hover {
+  background-color: #BC002D;
+  border-color: #BC002D; 
+}
+
+.box-reservasi:active {
+  background-color: hsl(346, 100%, 19%);
+  border-color: hsl(346, 100%, 19%);; 
+}
+
+.box-reservasi a{
+  margin: 0;
+}
+
+/* Menu Display */
+.menu-display{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-display img{
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 904px;
+  background: rgba(0, 0, 0, 1);
+}
+.blur{
+  position: absolute;
+  width: 100%;
+  height: 904px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+
+
+.zaki-circle img{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 39%;
+  top: 19%;
+  filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.25));
+}
+
+.felix-circle img{
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 46.8%;
+  top: 20%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.darel-circle img{
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 54%;
+  top: 20%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.shape-container {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #F4F4F4;
+  width: 619px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  z-index: 1;
+}
+
+
+.text-bio p{
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 550px;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.shape-profile {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #F4F4F4;
+  width: 500px;
+  height: 105px;
+  justify-content: center;
+  align-items: center;
+  background: #EFE8E4;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.profile-bg img{
+  position: absolute;
+  width: 466px;
+  height: 453px;
+  top: 24%;
+  left: 8%;
+}
+
+.text-name p{
+  position: absolute;
+  left: 8%;
+  top: 14%;
+  width: 550px;
+  color: #232736;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#linkedin_logo{
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  width: 50px;
+}
+
+#ig_logo{
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  width: 50px;
+}
+
+#tiktok_logo{
+  position: absolute;
+  top: 44%;
+  left: 29.5%;
+  width: 42px;
+}
+
+
+/* Footer */
+.footer{
+  position: relative;
+  height: 267px;
+  background-color: #232736;
+  color: white;
+}
+
+.footer .logo-text{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 225px; height: 130px;
+  padding: 5px;
+}
+
+.footer .logo-text img{
+  width: 72px;
+  height: auto;
+}
+
+.footer .logo-text span{
+  font-family: Abel;
+  font-size: 35px;
+}
+
+#footer-title{
+  position: absolute;
+  top: 10px; left: 90px;
+}
+
+#footer-tagline{
+  position: absolute;
+  top:50px; left: 80px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 13px;
+}
+
+#footer-alamat{
+  font-size: 14px;
+  margin: 5px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.footer .explore a, .footer .hubungi a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+.footer .explore{
+  position: absolute;
+  left: 45%;
+  top: 30%;
+}
+
+.footer .hubungi{
+  position: absolute;
+  left: 65%;
+  top: 30%;
+}
+
+.footer hr{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  top: 70%;
+}
+
+#cr-tag{
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  font-weight: 100;
+}

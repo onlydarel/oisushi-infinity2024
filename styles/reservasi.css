@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+  --background: #d44365;
+  --tombol: #FF7A16;
+  --putih: #FFFFFF;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #0F202A;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(180deg, #1A1A1A 0%, rgba(35, 39, 54, 0) 100%);
+
+  transition: box-shadow 0.5s ease;
+}
+
+.menu-navbar{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navbar a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 3px #000;
+  margin: 60px;
+  font-weight: 600;
+  transition: filter 0.3s ease;
+}
+
+.menu-navbar a:hover{
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.menu-navbar img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.box-reservasi{
+  margin-left: 60px;
+  text-shadow: 0 0 3px #000;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.box-reservasi:hover {
+  background-color: #BC002D;
+  border-color: #BC002D; 
+}
+
+.box-reservasi:active {
+  background-color: hsl(346, 100%, 19%);
+  border-color: hsl(346, 100%, 19%);; 
+}
+
+.box-reservasi a{
+  margin: 0;
+}
+/*Header*/
+.header{
+  text-align: center;
+  padding-top: 200px;
+}
+.header h1{
+  font-family: 'Abel', sans-serif;
+  font-size: 120px;
+}
+
+/*Menu*/
+.reservation h2{
+  text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact .contact-box {
+  flex: 1;
+  max-width: 1200px; 
+  text-align: center;
+}
+
+.contact-box form {
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+
+.contact-box h2 {
+  color: #ffffff;
+}
+
+form .form-content {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid lightgray;
+}
+
+form .form-content input {
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  font-size: 17px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #FFFFFF;
+}
+
+form .form-content label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #ffffff;
+  transform: translateY(-50%);
+  font-size: 17px;
+  transition: .5s;
+  pointer-events: none;
+}
+
+form .form-content span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transform: .4s;
+}
+
+form .form-content input:focus~label,
+form .form-content input:valid~label {
+  top: -5px;
+  color: #ffffff;
+}
+
+form .form-content input:focus~span::before,
+form .form-content input:valid~span::before {
+  width: 100%;
+}
+
+/*TANGGAL*/
+.tanggal{
+  padding: 20px;
+}
+.tanggal h2{
+  padding: 10px;
+  font-size: 50px;
+}
+
+.waktu{
+  padding:20px;
+}
+
+.waktu h2{
+  padding: 20px;
+  font-size: 50px;
+}
+/* BUTTON */
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.buttons button {
+  flex: 0 0 250px;
+  border: none;
+  background: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover,
+button:focus {
+  background: #FF7A16; 
+}
+
+
+/* Pilih Paket */
+.Paket {
+  padding: 10px;
+  align-items: center;
+}
+
+.Paket h2 {
+  padding: 10px;
+  font-size: 50px;
+}
+
+.Paket-item {
+  display: flex;
+}
+
+.sec1,
+.sec2,
+.sec3 {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sec1 img,
+.sec2 img,
+.sec3 img {
+  width: 300px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.sec1 .selected,
+.sec2 .selected,
+.sec3 .selected {
+  border: 2px solid #FF7A16;
+  border-radius: 30px;
+}
+
+.sec1 p,
+.sec2 p,
+.sec3 p {
+  margin: 5px 0;
+}
+/* Lokasi */
+.Lokasi {
+  padding: 10px;
+}
+
+.Lokasi h2 {
+  padding: 10px;
+  font-size: 50px;
+}
+
+.Lokasi-item {
+  display: flex;
+}
+
+.loc1,
+.loc2 {
+  margin: 5px auto;
+  width: 358.73px;
+  max-height: 293.24px;
+  display: inline-block;
+  background-color: #232736;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+.loc1.selected,
+.loc2.selected {
+  border: 2px solid #FF7A16;
+}
+
+.loc1 img,
+.loc2 img {
+  padding: 10px;
+  width: 266px;
+  display: block;
+  margin: 0 auto 10px;
+  
+}
+
+.loc1 p,
+.loc2 p {
+  font-size: 10px;
+  color: #FFF;
+  margin: 5px 0;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.loc1 b,
+.loc2 b {
+  color: #FFF;
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+
+/* Submit */
+.submit{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.submit-item{
+  background-color: #FF7A16;
+  color: #FFF;
+  width: 186px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* footer */
+.footer{
+  position: relative;
+  height: 267px;
+  background-color: #232736;
+  color: white;
+}
+
+.footer .logo-text{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 225px; height: 130px;
+  padding: 5px;
+}
+
+.footer .logo-text img{
+  width: 72px;
+  height: auto;
+}
+
+.footer .logo-text span{
+  font-family: Abel;
+  font-size: 35px;
+}
+
+#footer-title{
+  position: absolute;
+  top: 10px; left: 90px;
+}
+
+#footer-tagline{
+  position: absolute;
+  top:50px; left: 80px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 13px;
+}
+
+#footer-alamat{
+  font-size: 14px;
+  margin: 5px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.footer .explore a, .footer .hubungi a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+.footer .explore{
+  position: absolute;
+  left: 45%;
+  top: 30%;
+}
+
+.footer .hubungi{
+  position: absolute;
+  left: 65%;
+  top: 30%;
+}
+
+.footer hr{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  top: 70%;
+}
+
+#cr-tag{
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  font-weight: 100;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 120px;
+  }
+  
+  .navbar img {
+    width: 80px;
+  }
+  
+  .header h1 {
+    font-size: 60px;
+  }
+  
+  .tanggal h2,
+  .waktu h2 {
+    font-size: 30px;
+  }
+  
+  .buttons button {
+    flex: 0 0 200px;
+  }
+  
+  .sec1 img,
+  .sec2 img,
+  .sec3 img {
+    width: 200px;
+  }
+  
+  .loc1,
+  .loc2 {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    height: 80px;
+  }
+  
+  .navbar img {
+    width: 50px;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  .tanggal h2,
+  .waktu h2 {
+    font-size: 25px;
+  }
+  
+  .buttons button {
+    flex: 0 0 150px;
+  }
+  
+  .sec1 img,
+  .sec2 img,
+  .sec3 img {
+    width: 150px;
+  }
+  
+  .loc1,
+  .loc2 {
+    padding: 10px;
+  }
+  
+  .loc1-item p,
+  .loc2-item p {
+    font-size: 8px;
+  }
+}
+
+.hidden{
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.show{
+  transform: translateY(0);
+  filter: blur(0);
+  transition: all 1s;
+  opacity: 1;
+}
+
+.hidden-dec{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%) rotate(45deg);
+  transition: all 1s;
+}
+
+.show-dec{
+  filter: blur(0);
+  transform: translateY(0) rotate(0);
+  transition: all 1s;
+  opacity: 1;
+}
+
+.hidden-3{
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show-3{
+  transform: translateX(0);
+  filter: blur(0);
+  transition: all 1s;
+  opacity: 1;
+}

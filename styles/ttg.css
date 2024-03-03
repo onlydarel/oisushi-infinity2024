@@ -1,0 +1,371 @@
+:root {
+    --background: #d44365;
+    --tombol: #FF7A16;
+    --putih: #FFFFFF;
+  }
+  
+  *{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  user-select: none;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    background-color: #BC002D;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+  
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(180deg, #1A1A1A 0%, rgba(35, 39, 54, 0) 100%);
+
+  transition: box-shadow 0.5s ease;
+}
+
+.menu-navbar{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navbar a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 3px #000;
+  margin: 60px;
+  font-weight: 600;
+  transition: filter 0.3s ease;
+}
+
+.menu-navbar a:hover{
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.menu-navbar img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.box-reservasi{
+  margin-left: 60px;
+  text-shadow: 0 0 3px #000;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.box-reservasi:hover {
+  background-color: #BC002D;
+  border-color: #BC002D; 
+}
+
+.box-reservasi:active {
+  background-color: hsl(346, 100%, 19%);
+  border-color: hsl(346, 100%, 19%);; 
+}
+
+.box-reservasi a{
+  margin: 0;
+}
+
+/* Menu Display */
+.menu-display{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+.menu-display img{
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 904px;
+    background: rgba(0, 0, 0, 1);
+}
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 904px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.tentang-text p{
+    position: absolute;
+    font-family: "Abel", sans-serif;
+    font-weight: 300;
+    font-size: 120px;
+    top: 18.8%;
+    left: 19%;  
+}
+
+  .title-text {
+    position: absolute;
+    top: 25.5%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 14px;
+  }
+
+  .title-text #oisushi-text span{
+    font-family: "Abel", sans-serif;
+    font-weight: 100;
+    font-size: 120px;
+  }
+  
+  .red-text{
+    color: #BC002D;
+  }
+  
+  .title-text #oisushi-npnl p{
+    font-size: 19px;
+    font-weight: 600;
+    margin-left: 380px;
+    margin-top: -123px;
+    font-style: bolder;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.quotes-text p{
+    position: absolute;
+    font-family: "Abel", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    width: 880px;
+    top: 33%;
+    left: 19%;
+}
+
+.shape-container {
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F4F4F4;
+    width: 80%;
+    height: 270px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  .logo-shape img{
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.text-1 p{
+    position: absolute;
+    left: 8%;
+    top: 13%;
+    width: 1100px;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17.2px;
+    font-weight: 400;
+}
+
+.text-2 p{
+    position: absolute;
+    left: 3.5%;
+    top: 35%;
+    width: 1080px;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.about-me{
+  position: absolute;
+  bottom: 20px;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me img{
+  margin: 10px;
+  width: auto;
+  height: 75px;
+}
+
+#yt{
+  height: 60px;
+}
+
+#tt {
+  height: 60px;
+}
+
+.copyright-text{
+  position: absolute;
+  left: 50%;
+  top: 13 0%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17.2px;
+  font-weight: 200;
+}
+
+  /* Footer */
+  .footer{
+    position: relative;
+    height: 267px;
+    background-color: #232736;
+    color: white;
+  }
+  
+  .footer .logo-text{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 225px; height: 130px;
+    padding: 5px;
+  }
+  
+  .footer .logo-text img{
+    width: 72px;
+    height: auto;
+  }
+  
+  .footer .logo-text span{
+    font-family: Abel;
+    font-size: 35px;
+  }
+  
+  #footer-title{
+    position: absolute;
+    top: 10px; left: 90px;
+  }
+  
+  #footer-tagline{
+    position: absolute;
+    top:50px; left: 80px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 13px;
+  }
+  
+  #footer-alamat{
+    font-size: 14px;
+    margin: 5px;
+    font-weight: 100;
+    text-align: justify;
+  }
+  
+  .footer .explore a, .footer .hubungi a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+  }
+  
+  .footer .explore{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+  }
+  
+  .footer .hubungi{
+    position: absolute;
+    left: 65%;
+    top: 30%;
+  }
+  
+  .footer hr{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    top: 70%;
+  }
+  
+  #cr-tag{
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    font-weight: 100;
+  }
+
+  /* ANIMASI */
+  .hidden{
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+  
+  .show{
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all 1s;
+    opacity: 1;
+  }
+  
+  .hidden-2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+  
+  .show-2{
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+    opacity: 1;
+  }
+  
+  .hidden-3{
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  
+  .show-3{
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 1s;
+    opacity: 1;
+  }
